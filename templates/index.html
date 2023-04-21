@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Reusability</title>
+  <title>Reuse</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -73,7 +73,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="{{ url_for('githubSearchPage') }}" class="logo d-flex align-items-center">
         <img src="{{ url_for('static', filename='img/logo.png')}}" alt="">
-        <span class="d-none d-lg-block">Reusability</span>
+        <span class="d-none d-lg-block">Reuse</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -129,6 +129,20 @@
               <h5 class="card-title">GitHub</h5>
               <!-- General Form Elements -->
               <form action="{{ url_for('predict')}}" method="post" id="reusability_predict">
+
+                <div class="row mb-3">
+                  <label for="inputModel" class="col-sm-2 col-form-label">Classifier</label>
+                  <div class="col-sm-10">
+                    <select class="form-select" aria-label="Default select example" name="modelSelect">
+                      <option value={{currentModel}}>{{currentModel}}</option>
+                      {% for m in modelData %}
+                          <option value={{m}}>{{modelData[m]}}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+
+
                 <div class="row mb-3">
                   <label for="inputGithubLink" class="col-sm-2 col-form-label">URL</label>
                   <div class="col-sm-10">

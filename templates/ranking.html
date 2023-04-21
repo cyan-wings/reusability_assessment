@@ -45,7 +45,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="{{ url_for('githubSearchPage') }}" class="logo d-flex align-items-center">
         <img src="{{ url_for('static', filename='img/logo.png')}}" alt="">
-        <span class="d-none d-lg-block">Reusability</span>
+        <span class="d-none d-lg-block">Reuse</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -107,7 +107,7 @@
                   <label class="col-sm-2 col-form-label">Tag</label>
                   <div class="col-sm-10">
                     <select class="form-select" aria-label="Default select example" name="tag">
-                      <option value="All"></option>
+                      <option value={{currentTag}}>{{currentTag}}</option>
                       <option value="All">All</option>
                       {% for t in data %}
                         <option value={{t}}>{{t}}</option>
