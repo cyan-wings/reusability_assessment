@@ -29,7 +29,7 @@ classifier_dict = {
    "SGD": "Logistic Regression",
    "DT": "Decision Trees",
    "R": "Ridge Regression",
-   "XGB": "Extreme Gradient Boosting",
+   "XG": "Extreme Gradient Boosting",
    "GPC": "Gaussian Process",
    "ADA": "Adaptive Boosting",
    "GB": "Gradient Boosting"
