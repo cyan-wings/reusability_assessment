@@ -31,10 +31,10 @@ classifier_dict = {
    "SGD": "Logistic Regression",
    "DT": "Decision Trees",
    "R": "Ridge Regression",
-   "ADA": "Extreme Gradient Boosting",
+   "XG": "Extreme Gradient Boosting",
    "GPC": "Gaussian Process",
    "ADA": "Adaptive Boosting",
-   "ADA": "Gradient Boosting"
+   "GB": "Gradient Boosting"
 }
 
 app = Flask(__name__)
