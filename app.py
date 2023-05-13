@@ -23,18 +23,18 @@ def remove_columns(df):
 rankingData = pd.read_csv("forWebsite.csv", sep=",", encoding='utf-8')
 
 classifier_dict = {
-   "Default": "Default",
-   "RF": "Random Forest",
-   "MLP": "Multi-Layer Perceptron",
-   "SVM": "Support Vector Machine (RBF)",
-   "KNN": "K-Nearest Neighbors",
-   "SGD": "Logistic Regression",
-   "DT": "Decision Trees",
-   "R": "Ridge Regression",
-   "XG": "Extreme Gradient Boosting",
-   "GPC": "Gaussian Process",
-   "ADA": "Adaptive Boosting",
-   "GB": "Gradient Boosting"
+   "DEF": "Default",
+   "RF": "Random_Forest",
+   "MLP": "Multi_Layer_Perceptron",
+   "SVM": "Support_Vector_Machine(RBF)",
+   "KNN": "K_Nearest_Neighbors",
+   "LR": "Logistic_Regression",
+   "DT": "Decision_Trees",
+   "RR": "Ridge_Regression",
+   "EGB": "Extreme_Gradient_Boosting",
+   "GP": "Gaussian_Process",
+   "AB": "Adaptive_Boosting",
+   "GB": "Gradient_Boosting"
 }
 
 app = Flask(__name__)
@@ -81,9 +81,11 @@ def predict():
 
    gitLink = request.form["githublink"]
    selectedModel = request.form["modelSelect"]
+
    if selectedModel == "Default":
-      selectedModel = "R"
+      selectedModel = "RF"
    else:
+      selectedModel =  [k for k, v in classifier_dict.items() if v == selectedModel][0]
       currentModel = classifier_dict[selectedModel]
    model = dill.load(open('Saved_Models/{}.pkl'.format(selectedModel),'rb'))
 

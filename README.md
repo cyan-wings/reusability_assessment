@@ -57,3 +57,5 @@ Open Brave, Chrome or FireFox browser and input localhost:5000.
 - Fix the Model Selection bug.
 - Include some instructions on homepage that only Java GitHub projects can run on application.
 - Provide example of how to run prediction.
+- Display the current GitHub project it is predicting.
+- Provide a progress bar to show prediction results progress.
