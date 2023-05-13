@@ -89,7 +89,7 @@ def predict():
       currentModel = classifier_dict[selectedModel]
    model = dill.load(open('Saved_Models/{}.pkl'.format(selectedModel),'rb'))
 
-   token = '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'
+   token = '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'    #token is just a sample git personal access token. Insert account personal access token to predict a private project
    flag = os.system("git clone https://{}:x-oauth-basic@github.com/{}".format(token, gitLink))
 
    if flag==32768:
