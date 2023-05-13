@@ -79,7 +79,7 @@ deactivate
 ## TODO
 
 - Alleviate problems host this on Render.
-- Refactor code to have more structured modules.
+- Refactor code to have more structured modules along with code comments.
 - Fix the Model Selection bug.
 - Include some instructions on homepage that only Java GitHub projects can run on application.
 - Provide example of how to run prediction.
