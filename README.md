@@ -48,7 +48,21 @@ python3 -m pip install -r requirements.txt
 python3 -m gunicorn 'app:app'
 ```
 
-Open Brave, Chrome or FireFox browser and input localhost:5000.
+Open Brave, Chrome or FireFox browser and input localhost:8000.
+
+## Stopping the Application
+
+1. Ctrl-C to terminate the process on terminal.
+2. Deactivate environment.
+
+```bash
+deactivate
+```
+
+## Uninstall Everything and Removing Application
+
+1. Delete entire repository from folder.
+2. Uninstall JDK 11 and Python.
 
 ## TODO
 
