@@ -13,6 +13,14 @@ This project is currently hosted on [Render](http://reusability-assessment.onren
 
 ## Installation and Create Environment
 
+1. Download latest release.
+2. Extract the downloaded archieve file.
+
+Alternatively:
+```bash
+git clone cyan-wings/reusability_assessment
+```
+
 #### Linux/macOS
 Install JDK 11 (Any JDK will do. This tutorial we will use OpenJDK.) and Python (Latest version).
 ```bash
