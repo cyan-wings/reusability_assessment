@@ -14,11 +14,15 @@ This project is currently hosted on [Render](http://reusability-assessment.onren
 ## Installation and Create Environment
 
 1. Download latest release.
-2. Extract the downloaded archieve file.
+2. Extract the downloaded archive file.
+```bash
+cd reusability_assessment
+```
 
 Alternatively:
 ```bash
 git clone cyan-wings/reusability_assessment
+cd reusability_assessment
 ```
 
 #### Linux/macOS
