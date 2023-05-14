@@ -44,16 +44,8 @@ python3 -m pip install -r requirements.txt
 ```
 
 #### Windows
-1. Install JDK 11.
-2. Set environment variable JAVA_HOME=path_to_java
-3. Set append %JAVA_HOME%/bin to system variables.
-4. Install Python 3 (Latest version).
-5. Create virtual environment and install python package dependencies for application.
-```bash
-python3 -m venv venv-reuse-tool
-source venv-reuse-tool/bin/activate
-python3 -m pip install -r requirements.txt
-```
+No compatibility has been provided for Windows yet.
+
 ## Running the Application
 
 ```bash
@@ -85,3 +77,4 @@ deactivate
 - Provide example of how to run prediction.
 - Display the current GitHub project it is predicting.
 - Provide a progress bar to show prediction results progress.
+- Provide compatibility for Windows-based systems.
