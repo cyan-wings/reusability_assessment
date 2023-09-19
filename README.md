@@ -1,5 +1,5 @@
 ### This project is deprecated.
-### Kindly refer to [https://github.com/cyan-wings/streamlit-test](https://github.com/cyan-wings/streamlit-test) as the updated repository.
+### Kindly refer to [https://github.com/cyan-wings/Reuse-Tool](https://github.com/cyan-wings/Reuse-Tool) as the updated repository.
 
 # Reuse Assessmeent Tool
 
