@@ -1,3 +1,6 @@
+### This project is deprecated.
+### Kindly refer to [https://github.com/cyan-wings/streamlit-test]https://github.com/cyan-wings/streamlit-test as the updated repository.
+
 # Reuse Assessmeent Tool
 
 Author:       Matthew Yeow
